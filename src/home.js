@@ -10,7 +10,7 @@ class Home extends Component {
             text: "",
             img: '',
             fontSize: 100,
-            fontFamily: 'TaagraBold',
+            fontFamily: 'TaagraCalligraphy',
             maxWidth: 1500,
             lineHeight: 150,
             margin: 0,

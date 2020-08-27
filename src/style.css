@@ -4,7 +4,34 @@
     text-decoration: none;
     color: white;
     list-style-type: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-image: url('./assets/images/parchment.jpg');
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(29, 29, 29);
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 
 @font-face {
     font-family: 'TaagraBold';
@@ -28,6 +55,7 @@
 
 body {
     background-image: url('./assets/images/parchment.jpg');
+    background-attachment: fixed;
 }
 
 #main {
@@ -45,17 +73,25 @@ textarea {
     resize: none;
     color: black;
     margin-bottom: 70px;
+    border-style: none;
+    outline: none;
+    
 }
 
 .menu {
+    cursor: pointer;
     padding-left: 10px;
     transition: ease-in, 200ms;
     font-size: 20px;
     background-color: rgb(49, 49, 49);
-    margin-top: 3px;
+    margin-top: 2px;
     padding-top: 15px;
     padding-bottom: 15px;
     border-width: 1px;
+}
+
+.menu:hover {
+    background-color: rgb(163, 163, 163);
 }
 
 .optionMenu {
@@ -72,9 +108,15 @@ textarea {
     background-color: rgb(49, 49, 49);
     padding-bottom: 15px;
     padding-left: 5px;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    margin-left: 3px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.option:hover {
+    transition: ease-in, 200ms;
+    background-color: rgb(163, 163, 163);
 }
 
 .title {
@@ -96,11 +138,24 @@ textarea {
 }
 
 .downloadButton {
+    transition: ease-in, 200ms;
     background-color: rgb(49, 49, 49);
-    padding: 10px;
     margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-left: 10px;
-    width: 170px;
+    width: 180px;
+}
+
+.downloadButton:hover {
+    background-color: rgb(163, 163, 163);
+}
+
+.downloadButton>a {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
 
 .resultScreen {
@@ -133,7 +188,7 @@ textarea {
 .menu:hover>.optionMenu {
     position: fixed;
     flex-direction: column;
-    left: 268px;
+    left: 266px;
     font-size: 20px;
     margin-top: -41px;
     width: 300px;
