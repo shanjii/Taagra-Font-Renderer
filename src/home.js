@@ -7,7 +7,7 @@ class Home extends Component {
     constructor() {
         super();
         this.state = {
-            text: "Dras'kay",
+            text: "",
             img: '',
             fontSize: 100,
             fontFamily: 'TaagraBold',
@@ -18,7 +18,7 @@ class Home extends Component {
     }
 
     componentDidMount() {
-        var text = "Dras'kay"
+        var text = ""
         textToImage.generate(`\n ${text}`, {
             fontSize: this.state.fontSize,
             fontFamily: this.state.fontFamily,
@@ -83,7 +83,7 @@ class Home extends Component {
                 <div className="optionBar">
                     <h1 className="title">Ta'agra Font Renderer</h1>
                     <p className="info1">Type your text here:</p>
-                    <textarea rows="5" cols="35" defaultValue="Dras'kay" onChange={this._handleText} />
+                    <textarea rows="5" cols="35" defaultValue="" onChange={this._handleText} />
                     <div className="menu">
                         <p>Ta'agra fonts</p>
                         <div className="optionMenu">
