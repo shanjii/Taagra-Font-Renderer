@@ -121,7 +121,7 @@ class Home extends Component {
                     <p className="selectedFont">Selected size: '{this.state.fontSize}px'</p>
                     <br />
                     <div className="downloadButton">
-                        <a href={this.state.img} download>Download text as PNG</a>
+                        <a href={this.state.img} download="generated_taagra">Download text as PNG</a>
                     </div>
                 </div>
                 <div className="resultScreen">
