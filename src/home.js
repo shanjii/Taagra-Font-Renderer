@@ -65,7 +65,7 @@ class Home extends Component {
 
     _changeFont = (font) => {
         this.setState({ fontFamily: font })
-        this.setState({text: ''})
+        this.setState({ text: '' })
         textToImage.generate(`\n ${''}`, {
             fontSize: this.state.fontSize,
             fontFamily: font,
@@ -101,6 +101,22 @@ class Home extends Component {
                             <p onClick={() => { this._changeSize(40) }} className="option">Small</p>
                         </div>
                     </div>
+                    <div className="optionMenuMobile">
+                        <p className="info3">***SELECT YOUR FONT BEFORE INPUTING***</p>
+                    </div>
+                    <div className="optionMenuMobile">
+                        <p onClick={() => this._changeFont('TaagraBold')} className="option">Ta'agra Bold</p>
+                        <p onClick={() => this._changeFont('TaagraCalligraphy')} className="option">Ta'agra Caligraphy</p>
+                        <p onClick={() => this._changeFont('TaagraScratched')} className="option">Ta'agra Scratched</p>
+                    </div>
+                    <div className="optionMenuMobile">
+                        <p className="info3">Font sizes</p>
+                    </div>
+                    <div className="optionMenuMobile">
+                        <p onClick={() => { this._changeSize(100) }} className="option">Large</p>
+                        <p onClick={() => { this._changeSize(70) }} className="option">Medium</p>
+                        <p onClick={() => { this._changeSize(40) }} className="option">Small</p>
+                    </div>
                     <p className="selectedFont">Selected font: '{this.state.fontFamily}'</p>
                     <p className="selectedFont">Selected size: '{this.state.fontSize}px'</p>
                     <br />
@@ -112,7 +128,7 @@ class Home extends Component {
                     <img className="result" src={this.state.img} />
                 </div>
                 <div className="displayLimit" />
-                <p className="warning">RENDER LIMIT!</p>
+                <p className="warning">Render limit</p>
             </section>
         );
     }

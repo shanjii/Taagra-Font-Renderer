@@ -12,27 +12,6 @@
     user-select: none;
 }
 
-/* width */
-::-webkit-scrollbar {
-    width: 5px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background-image: url('./assets/images/parchment.jpg');
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: rgb(29, 29, 29);
-    border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
-
 @font-face {
     font-family: 'TaagraBold';
     src: local('TaagraBold'), url(./assets//fonts/TaagraBold.otf) format('opentype');
@@ -185,6 +164,10 @@ textarea {
     right: 20px;
 }
 
+.mobileInput {
+    display: none;
+}
+
 .menu:hover>.optionMenu {
     position: fixed;
     flex-direction: column;
@@ -193,4 +176,54 @@ textarea {
     margin-top: -41px;
     width: 300px;
     background-color: rgb(34, 34, 34);
+}
+
+.optionMenuMobile{
+    display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+    .resultScreen{
+        display: none;
+    }
+    .optionBar{
+        position: relative;
+        overflow-x: hidden;
+        height: 100vh;
+    }
+    .displayLimit {
+        display: none;
+    }
+    .warning{
+        display: none;
+    }
+    #main {
+        height: 100vh;
+    }
+    .title{
+        margin-left: 0px;
+        text-align: center;
+    }
+    textarea{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .menu{
+        display: none;
+    }
+    .optionMenuMobile{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .info3{
+        text-align: center;
+        margin-left: 5px;
+    }
+    .downloadButton {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    
+    
 }
