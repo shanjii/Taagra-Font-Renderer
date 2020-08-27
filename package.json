@@ -1,0 +1,46 @@
+{
+  "name": "taagra_image_generator",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "animate.css": "^4.1.0",
+    "canvas": "^2.6.1",
+    "compass": "^0.1.1",
+    "compass-mixins": "^0.12.10",
+    "fs": "0.0.1-security",
+    "jquery": "^3.5.1",
+    "node-sass": "^4.14.1",
+    "radium": "^0.26.0",
+    "react": "^16.13.1",
+    "react-animate-on-scroll": "^2.1.5",
+    "react-animations": "^1.0.0",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.3",
+    "react-slick": "^0.26.1",
+    "react-switch": "^5.0.1",
+    "text-to-image": "^2.3.0",
+    "text2png": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "CI= react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    font-family: 'Roboto';
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: 'TaagraBold';
+    src: local('TaagraBold'), url(./assets//fonts/TaagraBold.otf) format('otf');
+}
+
+@font-face {
+    font-family: 'TaagraCalligraphy';
+    src: local('TaagraCalligraphy'), url(./assets//fonts/TaagraCalligraphy.otf) format('otf');
+}
+
+@font-face {
+    font-family: 'TaagraScratched';
+    src: local('TaagraScratched'), url(./assets//fonts/TaagraScratched.otf) format('otf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), url(./assets//fonts/Roboto-Bold.ttf) format('ttf');
+}
+
+body {
+    background-image: url('./assets/images/parchment.jpg');
+}
+
+#main {
+    height: 1000px;
+}
+
+.optionBar {
+    position: fixed;
+    background-color: rgb(34, 34, 34);
+    height: 1000px;
+}
+
+textarea {
+    margin-top: 100px;
+    resize: none;
+    color: black;
+    margin-bottom: 70px;
+}
+
+.menu {
+    padding-left: 10px;
+    transition: ease-in, 200ms;
+    font-size: 20px;
+    background-color: rgb(49, 49, 49);
+    margin-top: 3px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-width: 1px;
+}
+
+.optionMenu {
+    position: fixed;
+    left: -300px;
+    font-size: 20px;
+    margin-top: -41px;
+    width: 300px;
+    background-color: rgb(34, 34, 34);
+}
+
+.option {
+    padding-top: 15px;
+    background-color: rgb(49, 49, 49);
+    padding-bottom: 15px;
+    padding-left: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 3px;
+}
+
+.title {
+    margin-left: 4px;
+    position: relative;
+    top: 25px;
+    font-size: 26px;
+}
+
+.info1 {
+    position: relative;
+    top: 97px;
+    left: 5px;
+}
+
+.selectedFont {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.downloadButton {
+    background-color: rgb(49, 49, 49);
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 170px;
+}
+
+.resultScreen {
+    margin-left: 280px;
+}
+
+.result {
+    margin-top: -50px;
+}
+
+.displayLimit {
+    position: absolute;
+    z-index: -1;
+    top: 950px;
+    margin-left: -18px;
+    border-bottom-style: solid;
+    border-color: red;
+    width: 100vw;
+}
+
+.warning {
+    position: absolute;
+    left: auto;
+    color: black;
+    top: 920px;
+    font-size: 25px;
+    right: 20px;
+}
+
+.menu:hover>.optionMenu {
+    position: fixed;
+    flex-direction: column;
+    left: 268px;
+    font-size: 20px;
+    margin-top: -41px;
+    width: 300px;
+    background-color: rgb(34, 34, 34);
+}
