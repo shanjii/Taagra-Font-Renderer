@@ -24,6 +24,7 @@ class Home extends Component {
             fontFamily: this.state.fontFamily,
             maxWidth: this.state.maxWidth,
             lineHeight: this.state.lineHeight,
+            bgColor: '#ffffff00',
             margin: this.state.margin,
         }).then((dataUri) => {
             this.setState({ img: dataUri })
@@ -35,6 +36,7 @@ class Home extends Component {
             fontSize: this.state.fontSize,
             fontFamily: this.state.fontFamily,
             maxWidth: this.state.maxWidth,
+            bgColor: '#ffffff00',
             lineHeight: this.state.lineHeight,
             margin: this.state.margin,
         }).then((dataUri) => {
@@ -53,6 +55,7 @@ class Home extends Component {
             fontSize: size,
             fontFamily: this.state.fontFamily,
             maxWidth: this.state.maxWidth,
+            bgColor: '#ffffff00',
             lineHeight: this.state.lineHeight,
             margin: this.state.margin,
         }).then((dataUri) => {
@@ -66,6 +69,7 @@ class Home extends Component {
             fontSize: this.state.fontSize,
             fontFamily: font,
             maxWidth: this.state.maxWidth,
+            bgColor: '#ffffff00',
             lineHeight: this.state.lineHeight,
             margin: this.state.margin,
         }).then((dataUri) => {

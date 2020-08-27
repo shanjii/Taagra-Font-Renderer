@@ -8,17 +8,17 @@
 
 @font-face {
     font-family: 'TaagraBold';
-    src: local('TaagraBold'), url(./assets//fonts/TaagraBold.otf) format('otf');
+    src: local('TaagraBold'), url(./assets//fonts/TaagraBold.otf) format('opentype');
 }
 
 @font-face {
     font-family: 'TaagraCalligraphy';
-    src: local('TaagraCalligraphy'), url(./assets//fonts/TaagraCalligraphy.otf) format('otf');
+    src: local('TaagraCalligraphy'), url(./assets//fonts/TaagraCalligraphy.otf) format('opentype');
 }
 
 @font-face {
     font-family: 'TaagraScratched';
-    src: local('TaagraScratched'), url(./assets//fonts/TaagraScratched.otf) format('otf');
+    src: local('TaagraScratched'), url(./assets//fonts/TaagraScratched.otf) format('opentype');
 }
 
 @font-face {
