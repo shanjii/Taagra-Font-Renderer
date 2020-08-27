@@ -215,6 +215,9 @@ textarea {
         display: block;
         margin-bottom: 10px;
     }
+    .info1{
+        display: none;
+    }
     .info3{
         text-align: center;
         margin-left: 5px;

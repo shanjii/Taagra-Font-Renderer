@@ -102,7 +102,7 @@ class Home extends Component {
                         </div>
                     </div>
                     <div className="optionMenuMobile">
-                        <p className="info3">***SELECT YOUR FONT BEFORE INPUTING***</p>
+                        <p className="info3">*SELECT YOUR FONT BEFORE INPUTING ABOVE*</p>
                     </div>
                     <div className="optionMenuMobile">
                         <p onClick={() => this._changeFont('TaagraBold')} className="option">Ta'agra Bold</p>
