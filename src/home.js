@@ -12,7 +12,7 @@ class Home extends Component {
             fontSize: 100,
             fontFamily: 'TaagraCalligraphy',
             maxWidth: 1500,
-            lineHeight: 150,
+            lineHeight: 180,
             margin: 0,
         }
     }
@@ -83,8 +83,8 @@ class Home extends Component {
             <section id="main">
                 <div className="optionBar">
                     <h1 className="title">Ta'agra Font Renderer</h1>
-                    <p className="info1">Type your text here:</p>
-                    <textarea value={this.state.text} rows="5" cols="35" onChange={this._handleText} />
+                    <p className="info1">Type here (Max 50 characters)</p>
+                    <textarea value={this.state.text} maxLength={50} rows="5" cols="35" onChange={this._handleText} />
                     <div className="menu">
                         <p>Ta'agra fonts</p>
                         <div className="optionMenu">
@@ -127,8 +127,6 @@ class Home extends Component {
                 <div className="resultScreen">
                     <img className="result" src={this.state.img} />
                 </div>
-                <div className="displayLimit" />
-                <p className="warning">Render limit</p>
             </section>
         );
     }

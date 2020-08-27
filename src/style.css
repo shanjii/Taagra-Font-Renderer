@@ -37,9 +37,6 @@ body {
     background-attachment: fixed;
 }
 
-#main {
-    height: 1200px;
-}
 
 .optionBar {
     position: fixed;
@@ -99,10 +96,10 @@ textarea {
 }
 
 .title {
-    margin-left: 4px;
+    margin-left: 6px;
     position: relative;
     top: 25px;
-    font-size: 26px;
+    font-size: 25px;
 }
 
 .info1 {
@@ -123,7 +120,7 @@ textarea {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-left: 10px;
-    width: 180px;
+    width: 185px;
 }
 
 .downloadButton:hover {
@@ -142,17 +139,19 @@ textarea {
 }
 
 .result {
-    margin-top: -50px;
+    transition: ease-in, 200ms;
+    margin-top: -100px;
+    width: 100%;
 }
 
 .displayLimit {
     position: absolute;
     z-index: -1;
-    top: 950px;
+    top: 1032px;
     margin-left: -18px;
     border-bottom-style: solid;
     border-color: red;
-    width: 100vw;
+    width: 100%;
 }
 
 .warning {
@@ -180,6 +179,11 @@ textarea {
 
 .optionMenuMobile{
     display: none;
+}
+@media only screen and (max-width: 1599px) {
+    .result{
+        margin-top: -50px;
+    }
 }
 
 @media only screen and (max-width: 1023px) {
@@ -227,6 +231,5 @@ textarea {
         margin-right: auto;
         margin-bottom: 20px;
     }
-    
     
 }
