@@ -65,7 +65,8 @@ class Home extends Component {
 
     _changeFont = (font) => {
         this.setState({ fontFamily: font })
-        textToImage.generate(`\n ${this.state.text}`, {
+        this.setState({text: ''})
+        textToImage.generate(`\n ${''}`, {
             fontSize: this.state.fontSize,
             fontFamily: font,
             maxWidth: this.state.maxWidth,
@@ -83,7 +84,7 @@ class Home extends Component {
                 <div className="optionBar">
                     <h1 className="title">Ta'agra Font Renderer</h1>
                     <p className="info1">Type your text here:</p>
-                    <textarea rows="5" cols="35" defaultValue="" onChange={this._handleText} />
+                    <textarea value={this.state.text} rows="5" cols="35" onChange={this._handleText} />
                     <div className="menu">
                         <p>Ta'agra fonts</p>
                         <div className="optionMenu">
