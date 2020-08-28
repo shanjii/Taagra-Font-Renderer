@@ -16,7 +16,7 @@ class Home extends Component {
             margin: 0,
         }
     }
-//kk
+    //Preload image generator (Image generator will not render the first custom font character without this)
     componentDidMount() {
         var text = ""
         textToImage.generate(`\n ${text}`, {
@@ -30,7 +30,12 @@ class Home extends Component {
             this.setState({ img: dataUri })
         });
     }
-
+    //Update a new image on text change
+    _handleText = (event) => {
+        this.setState({ text: event.target.value })
+        this._generateImage(event)
+    }
+    //Generate image from text values and font configurations
     _generateImage = (event) => {
         textToImage.generate(`\n ${event.target.value}`, {
             fontSize: this.state.fontSize,
@@ -43,12 +48,7 @@ class Home extends Component {
             this.setState({ img: dataUri })
         });
     }
-
-    _handleText = (event) => {
-        this.setState({ text: event.target.value })
-        this._generateImage(event)
-    }
-
+    //Update the generated image when changing font sizes
     _changeSize = (size) => {
         this.setState({ fontSize: size })
         textToImage.generate(`\n ${this.state.text}`, {
@@ -62,7 +62,7 @@ class Home extends Component {
             this.setState({ img: dataUri })
         });
     }
-
+    //Reset the text value on font change (Custom font will not be generated correctly without this)
     _changeFont = (font) => {
         this.setState({ fontFamily: font })
         this.setState({ text: '' })
