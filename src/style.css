@@ -37,7 +37,6 @@ body {
     background-attachment: fixed;
 }
 
-
 .optionBar {
     position: fixed;
     background-color: rgb(34, 34, 34);
@@ -51,7 +50,6 @@ textarea {
     margin-bottom: 0px;
     border-style: none;
     outline: none;
-    
 }
 
 .renderWarning {
@@ -184,30 +182,38 @@ textarea {
     background-color: rgb(34, 34, 34);
 }
 
-.optionMenuMobile{
+.optionMenuMobile {
     display: none;
 }
+
 @media only screen and (max-width: 1599px) {
-    .result{
+    .result {
         margin-top: -50px;
     }
 }
 
 @media only screen and (max-height: 580px) {
-    textarea{
+    textarea {
         margin-top: 50px;
         margin-bottom: 20px;
     }
-    .info1{
+    .info1 {
         display: none;
-    }    
+    }
 }
 
 @media only screen and (max-width: 1023px) {
-    .resultScreen{
+    .resultScreen {
         display: none;
     }
-    .optionBar{
+    .option:hover {
+        background-color: rgb(49, 49, 49);
+    }
+    .option:active {
+        transition: ease-in, 200ms;
+        background-color: rgb(163, 163, 163);
+    }
+    .optionBar {
         position: relative;
         overflow-x: hidden;
         height: 100vh;
@@ -215,31 +221,31 @@ textarea {
     .displayLimit {
         display: none;
     }
-    .warning{
+    .warning {
         display: none;
     }
     #main {
         height: 100vh;
     }
-    .title{
+    .title {
         margin-left: 0px;
         text-align: center;
     }
-    textarea{
+    textarea {
         width: 100%;
         margin-bottom: 10px;
     }
-    .menu{
+    .menu {
         display: none;
     }
-    .optionMenuMobile{
+    .optionMenuMobile {
         display: block;
         margin-bottom: 10px;
     }
-    .info1{
+    .info1 {
         display: none;
     }
-    .info3{
+    .info3 {
         text-align: center;
         margin-left: 5px;
     }
@@ -248,5 +254,4 @@ textarea {
         margin-right: auto;
         margin-bottom: 20px;
     }
-    
 }
