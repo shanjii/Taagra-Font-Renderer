@@ -16,7 +16,7 @@ class Home extends Component {
             margin: 0,
         }
     }
-
+//kk
     componentDidMount() {
         var text = ""
         textToImage.generate(`\n ${text}`, {
