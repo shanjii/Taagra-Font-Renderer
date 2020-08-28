@@ -83,8 +83,7 @@ class Home extends Component {
             <section id="main">
                 <div className="optionBar">
                     <h1 className="title">Ta'agra Font Renderer</h1>
-                    <p className="info1">Type here *</p>
-                    <textarea placeholder="Type here" value={this.state.text} rows="5" cols="35" onChange={this._handleText} />
+                    <textarea placeholder="Type here *" value={this.state.text} rows="5" cols="35" onChange={this._handleText} />
                     <p className="renderWarning">* Maximum render of 5 rows</p>
                     <div className="menu">
                         <p>Ta'agra fonts</p>
